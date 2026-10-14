@@ -1,0 +1,6 @@
+# Skill collections and picker contain third-party material whose redistribution
+# rights have not been verified. Keep them local unless separately cleared.
+/agents-skills/
+/opencode-skills/
+/smart-skill-picker/
+/docs/superpowers/
