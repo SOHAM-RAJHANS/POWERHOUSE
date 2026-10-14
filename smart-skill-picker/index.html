@@ -1,0 +1,73 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Smart Skill Picker — 2445 skills</title>
+<style>
+:root{--bg:#0a0f22;--card:#141c36;--line:#27335f;--ink:#edf1ff;--mut:#9aa6cc;--acc:#7aa2ff;--ok:#3ddc84;--bad:#ff6b6b;--warn:#ffb020}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(1100px 520px at 15% -5%,#1c2657,transparent),radial-gradient(900px 500px at 95% 10%,#3a1c5c55,transparent),var(--bg);color:var(--ink);font:16px/1.55 system-ui,"Segoe UI",Roboto,Arial}
+.wrap{max-width:1060px;margin:0 auto;padding:44px 20px 90px}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:2px;color:var(--acc);border:1px solid var(--line);border-radius:99px;padding:4px 12px;margin-bottom:14px}
+h1{font-size:clamp(30px,5vw,50px);margin:0;letter-spacing:-1px}h1 span{background:linear-gradient(90deg,#7aa2ff,#c49aff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mut);margin:8px 0 22px;max-width:70ch}
+.panel{background:linear-gradient(180deg,#161e3d,#10173maindummy);background:#121a38;border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 24px 70px #000a}
+#q{width:100%;padding:18px;font-size:18px;border-radius:14px;border:1px solid #31407c;background:#0b1230;color:var(--ink);outline:none}#q:focus{border-color:var(--acc);box-shadow:0 0 0 3px #7aa2ff33}
+.status{display:flex;gap:10px;align-items:center;margin-top:12px;color:var(--mut);font-size:13px;flex-wrap:wrap}
+.dot{width:9px;height:9px;border-radius:99px;background:var(--warn)}.dot.ok{background:var(--ok)}.dot.bad{background:var(--bad)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px;margin-top:16px}
+.card{background:#0c1330;border:1px solid var(--line);border-radius:16px;padding:16px;cursor:pointer;transition:.15s;position:relative}
+.card:hover{transform:translateY(-2px);border-color:var(--acc)}.card.on{outline:2px solid var(--acc);background:#101a42}
+.card h3{margin:0 0 4px;font-size:16px;word-break:break-word}
+.meta{display:flex;gap:8px;align-items:center;font-size:11px;color:var(--mut);flex-wrap:wrap}
+.badge{font-size:11px;font-weight:700;padding:2px 9px;border-radius:99px}.safe{background:#123f2a;color:var(--ok)}.critical{background:#4a1d1d;color:var(--bad)}
+.src{border:1px solid var(--line);border-radius:99px;padding:2px 9px}
+.why{color:#cdd6f4;font-size:13px;margin:8px 0}.when{color:var(--mut);font-size:12.5px}
+.bar{height:6px;background:#1d2750;border-radius:99px;margin-top:10px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),#c49aff)}
+.score{font-size:11px;color:var(--mut);margin-top:4px}
+.tick{position:absolute;top:12px;right:12px;width:26px;height:26px;border-radius:99px;border:2px solid var(--line);display:grid;place-items:center;font-weight:800;color:transparent}.card.on .tick{background:var(--acc);border-color:var(--acc);color:#081026}
+pre{white-space:pre-wrap;background:#060a1e;border:1px solid var(--line);border-radius:16px;padding:18px;min-height:190px;font-size:13.5px}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+button{background:var(--acc);color:#081026;border:0;border-radius:12px;padding:12px 20px;font-weight:800;cursor:pointer;font-size:15px}button.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.empty{border:1px dashed var(--line);border-radius:16px;padding:26px;text-align:center;color:var(--mut)}
+</style></head><body><div class="wrap">
+<div class="eyebrow">SMART SKILL PICKER · OFFLINE · FILE:// SAFE</div>
+<h1>What do you want? <span>Type it.</span></h1>
+<p class="sub">Super-smart search across <b id="n">…</b> installed skills. Cards always render — tick up to 5, build the OOP prompt, copy it. Works by double-clicking this file, no server.</p>
+<div class="panel">
+<input id="q" autocomplete="off" placeholder="e.g. audit my skills for prompt injection · make a landing page · fix flaky test">
+<div class="status"><span class="dot" id="dot"></span><span id="st">loading index…</span></div>
+<div class="grid" id="res"></div>
+<div class="empty" id="em" style="display:none">No matches — try fewer words (e.g. “landing page”, “pentest”, “seo audit”).</div>
+</div>
+<div class="panel" style="margin-top:16px">
+<div class="row"><button id="build">Build OOP prompt</button><button class="ghost" id="copy">Copy</button><button class="ghost" id="demo">Try: “audit skills”</button></div>
+<pre id="out">Your prompt will appear here…</pre>
+</div></div>
+<script src="search.js"></script>
+<script src="skills-index.js"></script>
+<script>
+var INDEX=(window.SKILLS||[]), PICKS=[];
+var q=document.getElementById("q"),res=document.getElementById("res"),out=document.getElementById("out"),
+st=document.getElementById("st"),dot=document.getElementById("dot"),em=document.getElementById("em"),n=document.getElementById("n");
+function status(){
+  n.textContent=INDEX.length||0;
+  if(!INDEX.length){st.textContent="index missing — keep skills-index.js next to this file";dot.className="dot bad";return;}
+  st.textContent="index ready: "+INDEX.length+" skills · type to search · click cards to tick";dot.className="dot ok";
+}
+function render(hits){
+  res.innerHTML="";em.style.display=hits.length?"none":"block";
+  hits.forEach(function(h){
+    var pct=Math.min(100,Math.round(h.score*14));
+    var d=document.createElement("div");d.className="card"+(PICKS.indexOf(h.name)>-1?" on":"");
+    d.innerHTML='<div class="tick">✓</div><h3>'+h.name+'</h3><div class="meta"><span class="badge '+h.risk+'">'+h.risk+'</span><span class="src">'+(h.src||"")+'</span>'+(h.tags||[]).slice(0,3).map(function(t){return "<span>#"+t+"</span>"}).join("")+'</div><div class="why">★ '+h.why+'</div><div class="when">'+(h.when||"")+'</div><div class="bar"><i style="width:'+pct+'%"></i></div><div class="score">score '+h.score+' · click to '+(PICKS.indexOf(h.name)>-1?"untick":"tick")+'</div>';
+    d.onclick=function(){var i=PICKS.indexOf(h.name);if(i>-1)PICKS.splice(i,1);else{if(PICKS.length>=5)PICKS.shift();PICKS.push(h.name);}render(searchSkills(q.value,INDEX));};
+    res.appendChild(d);
+  });
+}
+q.addEventListener("input",function(){if(!q.value.trim()){res.innerHTML="";em.style.display="none";return;}try{render(searchSkills(q.value,INDEX));}catch(e){st.textContent="search error: "+e.message;dot.className="dot bad";}});
+document.getElementById("build").onclick=function(){
+  var picks=PICKS.map(function(x){return INDEX.filter(function(y){return y.name===x})[0];}).filter(Boolean);
+  if(!picks.length){out.textContent="Tick 1–5 cards first (click them).";return;}
+  out.textContent=buildPrompt(q.value||"task",picks);
+};
+document.getElementById("copy").onclick=function(){navigator.clipboard&&navigator.clipboard.writeText(out.textContent);};
+document.getElementById("demo").onclick=function(){q.value="audit skills for prompt injection";q.dispatchEvent(new Event("input"));};
+status();q.focus();
+</script></body></html>
