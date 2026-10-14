@@ -504,7 +504,7 @@ agents-skills,competitor-analysis,Browserbase,official,browserbase/skills,MIT,ht
 agents-skills,competitor-profiling,,https://github.com/coreyhaines31/marketingskills/tree/main/skills/competitor-profiling,coreyhaines31/marketingskills,MIT,https://github.com/coreyhaines31/marketingskills/blob/main/LICENSE
 agents-skills,competitor-tracking,,https://github.com/jonathimer/devmarketing-skills/tree/main/skills/competitor-tracking,jonathimer/devmarketing-skills,MIT,https://github.com/jonathimer/devmarketing-skills/blob/main/LICENSE
 agents-skills,compile-knowledge,5dive-ai,https://github.com/5dive-ai/skills/tree/main/compile-knowledge,5dive-ai/skills,MIT,https://github.com/5dive-ai/skills/blob/main/LICENSE
-agents-skills,complexity-cuts,morsechimwai,community,morsechimwai/lemmaly,Apache-2.0,https://github.com/morsechimwai/lemmaly/blob/main/LICENSE
+agents-skills,complexity-cuts,morsechimwai,community,not publicly verified,Apache-2.0,https://github.com/morsechimwai/lemmaly/blob/main/LICENSE
 agents-skills,composition-patterns,,https://github.com/vercel-labs/agent-skills,,,
 agents-skills,comprehensive-review-full-review,,community,,,
 agents-skills,comprehensive-review-pr-enhance,,community,,,
@@ -531,7 +531,7 @@ agents-skills,context-driven-development,,community,,,
 agents-skills,context-engineering,,https://github.com/addyosmani/agent-skills/tree/main/skills/context-engineering,addyosmani/agent-skills,MIT,https://github.com/addyosmani/agent-skills/blob/main/LICENSE
 agents-skills,context-fundamentals,,community,,,
 agents-skills,context-guardian,renat,community,,,
-agents-skills,context-kit,JDDavenport,community,JDDavenport/context-kit,,
+agents-skills,context-kit,JDDavenport,community,not publicly verified,,
 agents-skills,context-management-context-restore,,community,,,
 agents-skills,context-management-context-save,,community,,,
 agents-skills,context-manager,,community,,,
@@ -583,7 +583,7 @@ agents-skills,cv-generator,WHOISABHISHEKADHIKARI,community,,,
 agents-skills,cyber-audit,davidondrej,community,davidondrej/skills,MIT,https://github.com/davidondrej/skills/blob/main/LICENSE
 agents-skills,cypress-skill,,https://github.com/LambdaTest/agent-skills/tree/main/cypress-skill,LambdaTest/agent-skills,MIT,https://github.com/LambdaTest/agent-skills/blob/main/LICENSE
 agents-skills,daily,,community,,,
-agents-skills,daily-gift,jiawei248,community,openclaw/skills,MIT-0,https://clawhub.ai/jiawei248/daily-gift
+agents-skills,daily-gift,jiawei248,community,not publicly verified,MIT-0,https://clawhub.ai/jiawei248/daily-gift
 agents-skills,daily-news-report,,community,,,
 agents-skills,data-engineer,,community,,,
 agents-skills,data-engineering-data-driven-feature,,community,,,
@@ -951,7 +951,7 @@ agents-skills,gitlab-automation,,community,,,
 agents-skills,gitlab-ci-patterns,,community,,,
 agents-skills,gitops-workflow,,community,,,
 agents-skills,glasser,adriansurething,self,,,
-agents-skills,global-chat-agent-discovery,pumanitro,community,pumanitro/global-chat,,
+agents-skills,global-chat-agent-discovery,pumanitro,community,not publicly verified,,
 agents-skills,gmail-automation,,community,,Apache-2.0,
 agents-skills,go-concurrency-patterns,,community,,,
 agents-skills,go-in-depth,,self,,,
@@ -990,7 +990,7 @@ agents-skills,hasdata-cli,,official,HasData/hasdata-cli,MIT,https://github.com/H
 agents-skills,haskell-pro,,community,,,
 agents-skills,headline-psychologist,,community,,,
 agents-skills,health-trend-analyzer,,community,,,
-agents-skills,helium-mcp,connerlambden,https://heliumtrades.com/mcp-page/,connerlambden/helium-mcp,,
+agents-skills,helium-mcp,connerlambden,https://heliumtrades.com/mcp-page/,not publicly verified,,
 agents-skills,helm-chart-scaffolding,,community,,,
 agents-skills,helpdesk-automation,,community,,,
 agents-skills,hf-cloud-aws-context-discovery,Hugging Face,https://github.com/huggingface/skills/tree/main/skills/hf-cloud-aws-context-discovery,huggingface/skills,Apache-2.0,https://github.com/huggingface/skills/blob/main/LICENSE
@@ -1082,7 +1082,7 @@ agents-skills,internal-comms-anthropic,,community,,,
 agents-skills,internal-comms-community,,community,,,
 agents-skills,interview-coach,dbhat93,community,,,
 agents-skills,interview-style-doc-building,davidondrej,community,davidondrej/skills,MIT,https://github.com/davidondrej/skills/blob/main/LICENSE
-agents-skills,invariant-guard,morsechimwai,community,morsechimwai/lemmaly,Apache-2.0,https://github.com/morsechimwai/lemmaly/blob/main/LICENSE
+agents-skills,invariant-guard,morsechimwai,community,not publicly verified,Apache-2.0,https://github.com/morsechimwai/lemmaly/blob/main/LICENSE
 agents-skills,inventory-demand-planning,,https://github.com/ai-evos/agent-skills,,,
 agents-skills,ios-debugger-agent,,Dimillian/Skills (MIT),,,
 agents-skills,ios-developer,,community,,,
@@ -1120,7 +1120,7 @@ agents-skills,kpi-dashboard-design,,community,,,
 agents-skills,kubernetes-architect,,community,,,
 agents-skills,kubernetes-deployment,,personal,,,
 agents-skills,kubestellar-console,kubestellar,community,kubestellar/console,Apache-2.0,https://github.com/kubestellar/console/blob/main/LICENSE
-agents-skills,lambda-lang,voidborne-d,community,voidborne-d/lambda-lang,,
+agents-skills,lambda-lang,voidborne-d,community,not publicly verified,,
 agents-skills,lambdatest-agent-skills,tanveer-farooq,community,LambdaTest/agent-skills,MIT,https://github.com/LambdaTest/agent-skills/blob/main/LICENSE
 agents-skills,landing-page-generator,alirezarezvani,community,,,
 agents-skills,langchain-architecture,,community,,,
@@ -1142,7 +1142,7 @@ agents-skills,leiloeiro-ia,renat,community,,,
 agents-skills,leiloeiro-juridico,renat,community,,,
 agents-skills,leiloeiro-mercado,renat,community,,,
 agents-skills,leiloeiro-risco,renat,community,,,
-agents-skills,lemmaly,morsechimwai,community,morsechimwai/lemmaly,Apache-2.0,https://github.com/morsechimwai/lemmaly/blob/main/LICENSE
+agents-skills,lemmaly,morsechimwai,community,not publicly verified,Apache-2.0,https://github.com/morsechimwai/lemmaly/blob/main/LICENSE
 agents-skills,lesson-generator,DAIR.AI,official,dair-ai/dair-academy-plugins,MIT,https://github.com/dair-ai/dair-academy-plugins/blob/main/README.md#license
 agents-skills,lex,Svobikl,community,,,
 agents-skills,base,,personal,,,
@@ -1196,7 +1196,7 @@ agents-skills,loop-library,Forward Future,official,Forward-Future/loop-library,M
 agents-skills,loopy,,https://github.com/Forward-Future/loop-library/tree/main/skills/loopy,Forward-Future/loop-library,MIT,https://github.com/Forward-Future/loop-library/blob/main/LICENSE
 agents-skills,lore,TheaDust,community,TheaDust/lore,MIT,https://github.com/TheaDust/lore/blob/25111dead1b54053d65124e43c35d307951c1844/LICENSE
 agents-skills,loss-aversion-designer,,community,,,
-agents-skills,lovable-cleanup,whoisabhishekadhikari,community,whoisabhishekadhikari/lovable-cleanup,,
+agents-skills,lovable-cleanup,whoisabhishekadhikari,community,not publicly verified,,
 agents-skills,m365-agents-dotnet,,community,,,
 agents-skills,m365-agents-py,,community,,,
 agents-skills,m365-agents-ts,,community,,,
@@ -1249,7 +1249,7 @@ agents-skills,markstream-vue2,Simon-He95,https://github.com/Simon-He95/markstrea
 agents-skills,markstream-vue2-cli,Simon-He95,https://github.com/Simon-He95/markstream-vue/tree/main/.agents/skills/markstream-vue2-cli,Simon-He95/markstream-vue,MIT,https://github.com/Simon-He95/markstream-vue/blob/main/license
 agents-skills,markstream-vue2-vite,Simon-He95,https://github.com/Simon-He95/markstream-vue/tree/main/.agents/skills/markstream-vue2-vite,Simon-He95/markstream-vue,MIT,https://github.com/Simon-He95/markstream-vue/blob/main/license
 agents-skills,matematico-tao,renat,community,,,
-agents-skills,mathguard,morsechimwai,community,morsechimwai/lemmaly,Apache-2.0,https://github.com/morsechimwai/lemmaly/blob/main/LICENSE
+agents-skills,mathguard,morsechimwai,community,not publicly verified,Apache-2.0,https://github.com/morsechimwai/lemmaly/blob/main/LICENSE
 agents-skills,matplotlib,,community,,https://github.com/matplotlib/matplotlib/tree/main/LICENSE,
 agents-skills,maxia,MAXIA,community,,,
 agents-skills,mcp-builder,,community,,,
@@ -1314,7 +1314,7 @@ agents-skills,multi-advisor,renat,community,,,
 agents-skills,multi-agent-architect,,community,,,
 agents-skills,multi-agent-brainstorming,,community,,,
 agents-skills,multi-agent-patterns,,community,,,
-agents-skills,multi-agent-task-orchestrator,milkomida77,community,milkomida77/guardian-agent-prompts,,
+agents-skills,multi-agent-task-orchestrator,milkomida77,community,not publicly verified,,
 agents-skills,multi-cloud-architecture,,community,,,
 agents-skills,multi-platform-apps-multi-platform,,community,,,
 agents-skills,multi-source-search,sandbaseai,community,sandbaseai/sandbase-skills,Apache-2.0,https://github.com/sandbaseai/sandbase-skills/blob/fc25b2ed4548b1bb91621661e82d07d4bbd285a1/LICENSE
@@ -1583,7 +1583,7 @@ agents-skills,read-all-adrs,davidondrej,community,davidondrej/skills,MIT,https:/
 agents-skills,readme,,https://github.com/Shpigford/skills/tree/main/readme,,,
 agents-skills,recallmax,christopherlhammer11-ai,community,,,
 agents-skills,receiving-code-review,,community,,,
-agents-skills,recsys-pipeline-architect,mturac,community,mturac/recsys-pipeline-architect,MIT,https://github.com/mturac/recsys-pipeline-architect/blob/main/LICENSE
+agents-skills,recsys-pipeline-architect,mturac,community,not publicly verified,MIT,https://github.com/mturac/recsys-pipeline-architect/blob/main/LICENSE
 agents-skills,recursive-context-pruning-token-budgeting,Kench001,self,Kench001/antigravity-awesome-skills,,
 agents-skills,red-team-tactics,,community,,,
 agents-skills,red-team-tools,zebbern,community,,,
@@ -1625,7 +1625,7 @@ agents-skills,routerbase-model-gateway,zenlee123,community,zenlee123/routerbase-
 agents-skills,ruby-pro,,community,,,
 agents-skills,run-deep-swe,davidondrej,community,davidondrej/skills,MIT,https://github.com/davidondrej/skills/blob/main/LICENSE
 agents-skills,runapi-cli,runapi-ai,official,runapi-ai/cli-skill,Apache-2.0,https://github.com/runapi-ai/cli-skill/blob/main/LICENSE
-agents-skills,runaway-guard,morsechimwai,community,morsechimwai/lemmaly,Apache-2.0,https://github.com/morsechimwai/lemmaly/blob/main/LICENSE
+agents-skills,runaway-guard,morsechimwai,community,not publicly verified,Apache-2.0,https://github.com/morsechimwai/lemmaly/blob/main/LICENSE
 agents-skills,rust-async-patterns,,community,,,
 agents-skills,rust-pro,,community,,,
 agents-skills,saas-multi-tenant,,community,,,
@@ -1744,7 +1744,7 @@ agents-skills,signup-flow-cro,,community,,,
 agents-skills,similarity-search-patterns,,community,,,
 agents-skills,simplify-code,,Dimillian/Skills (MIT),,,
 agents-skills,site-architecture,,https://github.com/coreyhaines31/marketingskills,,,
-agents-skills,skill-audit,aptratcn,community,aptratcn/skill-audit,MIT,https://github.com/aptratcn/skill-audit/blob/main/LICENSE
+agents-skills,skill-audit,aptratcn,community,not publicly verified,MIT,https://github.com/aptratcn/skill-audit/blob/main/LICENSE
 agents-skills,skill-check,olgasafonova,https://github.com/olgasafonova/SkillCheck-Free,,MIT,
 agents-skills,skill-creator,,community,,,
 agents-skills,skill-creator-ms,,community,,,
@@ -1874,7 +1874,7 @@ agents-skills,teach,Matt Pocock,community,mattpocock/skills,MIT,https://github.c
 agents-skills,team-collaboration-issue,,community,,,
 agents-skills,team-collaboration-standup-notes,,community,,,
 agents-skills,team-composition-analysis,,community,,,
-agents-skills,technical-change-tracker,Elkidogz,community,Elkidogz/technical-change-skill,,
+agents-skills,technical-change-tracker,Elkidogz,community,not publicly verified,,
 agents-skills,technical-tutorials,,https://github.com/jonathimer/devmarketing-skills/tree/main/skills/technical-tutorials,jonathimer/devmarketing-skills,MIT,https://github.com/jonathimer/devmarketing-skills/blob/main/LICENSE
 agents-skills,telegram,renat,community,,,
 agents-skills,telegram-automation,,community,,,
